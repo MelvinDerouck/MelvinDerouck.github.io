@@ -1634,7 +1634,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			transform: translateX(70px) translateY(-5px);
+			padding: 10px;
 		}
 
 		.image.featured {
@@ -2477,7 +2478,6 @@ input, select, textarea {
 			font-size: 1.8em;
 	}
 
-
 		/* Time line */
 
 
@@ -2486,4 +2486,34 @@ input, select, textarea {
 			justify-content: center;
 			align-items: center;
 		  }
-		  
+
+		
+		/* Small logo */
+
+
+		.image-featured-container {
+			position: relative;
+			display: inline-block;
+		}
+		
+		.logo-overlay {
+			position: absolute;
+			top: -15px;
+			right: -25px;
+			width: 70px; 
+			height: auto; 
+		}
+		
+
+		/* Dynamic text */		
+
+		#dynamic-text {
+			color: #E91E63;
+			font-weight: bold;
+		}
+		
+		.gradient-text {
+			background-image: linear-gradient(90deg, #18BEE9, #C96FE1, #F45161);
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
