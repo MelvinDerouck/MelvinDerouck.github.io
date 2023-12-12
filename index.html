@@ -14,6 +14,11 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap" class="wtd-font">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded" class="wtd-font">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+		<script language="javascript" src="libraries/p5.dom.js"></script>
+		<script language="javascript" type="text/javascript" src="background.js"></script>
+		<script language="javascript" type="text/javascript" src="particle.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -32,13 +37,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/PP DEROUCK square.png" alt="Photo profil" /></span>
+							<span class="profile-border"><img src="images/PP DEROUCK circle.png" alt="Photo profil" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<h1>Hello world. My name is
-									<strong>Melvin</strong> !</h1>
-									<h2>I am <span id="dynamic-text" class="gradient-text" style="">a data enthusiast</span><span class="cursor"> </span></h2>
+									<strong><a href="https://www.linkedin.com/in/melvin-derouck-524089aa/">Melvin</a></strong> !</h1>
+									<h2>I am <span id="dynamic-text" class="gradient-text" style=""></span><span class="cursor"> </span></h2>
 							</header>
 							<p>Welcome to my Github page.<br>
 								You will find many of my personal projects here, 
@@ -75,23 +80,23 @@
 					<div class="row hide-if-small-screen centered-content" style="padding-top: 5%">
 						<div class="col-lg-12 col-md-8 col-sm-8 text-center">
 							<svg width="980" height="138">
-								<line x1="0" y1="50" x2="1000" y2="50" style="stroke:black; stroke-width:1.5"></line>
+								<line x1="0" y1="50" x2="1000" y2="50" style="stroke:#757478; stroke-width:1.5"></line>
 			
-								<circle cx="220" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#78503C"></circle>
+								<circle cx="220" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
 								<text text-anchor="middle" x="220" y="80" fill="black">2018</text>
 			
 								<text font-size="13" text-anchor="middle" x="100" y="30" fill="black">Process Technician</text>
 								<text style="font-style: italic" font-size="13" text-anchor="middle" x="100" y="80" fill="#808080">STMicroelectronics</text>
 								<image href="https://images.ctfassets.net/jfh6bmmmap0r/2EDlnBYHtgwK4prPJ0m149/c60d6468427de57da97c8de06e68d4ec/st-logo_2.png" x="60" y="90" height="60px" width="65px"/>
 
-								<circle cx="480" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#78503C"></circle>
+								<circle cx="480" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
 								<text text-anchor="middle" x="480" y="80" fill="black">2019</text>
 			
 								<text font-size="13" text-anchor="middle" x="350" y="30" fill="black">Quality Technician</text>
 								<text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="80" fill="#808080">Becton Dickinson</text>
 								<image href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Becton_Dickinson_logo.svg/2560px-Becton_Dickinson_logo.svg.png" x="300" y="90" height="60px" width="90px"/>
 
-								<circle cx="730" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#78503C"></circle>
+								<circle cx="730" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
 								<text text-anchor="middle" x="730" y="80" fill="black">2023</text>
 			
 								<text font-size="13" text-anchor="middle" x="605" y="30" fill="black">Process Technician</text>
@@ -115,7 +120,7 @@
 				<img src="images/Book_skills_island_v3.png" alt="Infographics of my technical stack" class="full-width-image">
 			</div>
 			<p></p>
-			<p style="font-size: 24px;"><strong>Additionally, please find a link to my resume for more detailed information: <a href="" download="Melvin_Derouck_cv.pdf">fr version</a>, <a href="" download="Melvin_Derouck_resume.pdf">eng version</a></strong></p>
+			<p style="font-size: 24px;"><strong>Additionally, please find a link to my resume for more detailed information: <a href="" download="Melvin_Derouck_cv.pdf">fr version</a>, <a href="docs\CV MELVIN DEROUCK (EN).pdf" download="Melvin_Derouck_resume.pdf">eng version</a></strong></p>
 		</article>
 
 		<!-- Portfolio -->
@@ -132,10 +137,14 @@
 									<a href="#" class="image featured"><img src="https://stellantis3.dam-broadcast.com/medias/domain12808/media105748/1724527-re08p9kw2c-whr.jpg" alt="" /></a>
 									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png" class="logo-overlay" alt="Power BI Logo" />
 								</div>
+
+								
 								<h3><a href="#">Eco-Fleet Transition</a></h3>
 								<p>Leveraging data to prioritize the switch to electric vehicles based on technicians driving habits and consumption patterns.</p>
 							</article>
 						</div>
+
+
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
@@ -143,6 +152,8 @@
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
+
+
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
@@ -150,6 +161,8 @@
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
+
+
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
@@ -157,6 +170,8 @@
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
+
+
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
@@ -164,6 +179,8 @@
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
+
+
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
@@ -172,6 +189,8 @@
 							</article>
 						</div>
 					</div>
+
+
 					<footer>
 						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 						<a href="#contact" class="button large scrolly">Get in touch with me</a>
@@ -186,6 +205,7 @@
 						<h2>Contact</h2>
 						<p>Feel free to contact me to discuss how I can add value to your project or business through data analysis. </br> 
 							I'm open to collaboration opportunities and always ready to explore new horizons.<br/>
+							<br/>
 							You can contact me on my <a href="https://www.linkedin.com/in/melvin-derouck-524089aa/">Linkedin</a>, send me an email at <a href="mailto:derouck.mel@gmail.com"> derouck.mel@gmail.com</a>, or fill this form :</p>
 					</header>
 					<div class="row">
@@ -240,6 +260,7 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets\js\scriptdynamic.js"></script>
 			<script src="assets/js/main.js"></script>
 
 	</body>

@@ -1,7 +1,7 @@
 // Initialisation des mots
-var words = ["a Data Enthusiast", "a Data Analyst", "ready to help You!"];
+var words = ["a Data Analyst", "skilled in Python & SQL", "a data enthusiast", "ready to help you !"];
 var i = 0;
-var typingSpeed = 100; // Vitesse de frappe
+var typingSpeed = 70; // Vitesse de frappe
 var deletingSpeed = typingSpeed / 3; // Vitesse d'effacement, 3 fois plus rapide
 
 function typeEffect() {
@@ -23,7 +23,7 @@ function deleteEffect() {
         if (!word.length) {
             clearInterval(deletingEffect);
             i = (i + 1) % words.length;
-            setTimeout(changeWord, 500); // Temps avant de changer de mot
+            setTimeout(changeWord, 100); // Temps avant de changer de mot
             return;
         }
         word = word.slice(0, -1); // Enlever un caractère

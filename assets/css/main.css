@@ -1632,10 +1632,12 @@ input, select, textarea {
 			width: 100%;
 		}
 
+
 		.image.fit {
-			display: block;
+			display: relative;
 			transform: translateX(70px) translateY(-5px);
 			padding: 10px;
+			background: linear-gradient(90deg, #18BEE9, #C96FE1, #F45161);
 		}
 
 		.image.featured {
@@ -1643,6 +1645,10 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+
+		.image.featured:hover {
+			transform: translateY(-5px);
+			  }
 
 		.image.left {
 			float: left;
@@ -2459,7 +2465,7 @@ input, select, textarea {
 
 		.info-card {
 			background: #fafafa;
-			border: 1px solid #ddd;
+			border: 2px solid #ddd;
 			border-radius: 15px;
 			box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 			text-align: center;
@@ -2471,12 +2477,18 @@ input, select, textarea {
 			justify-content: center;
 			align-items: center;
 			height: 120px;
+			transform: translateY(10px);
 			transition: transform 0.3s ease;
 	}
 
 		.info-card .info-content h3 {
 			font-size: 1.8em;
 	}
+
+	
+		.info-card:hover {
+		transform: translateY(-5px);
+	  	}
 
 		/* Time line */
 
@@ -2507,7 +2519,7 @@ input, select, textarea {
 
 		/* Dynamic text */		
 
-		#dynamic-text {
+		.dynamic-text {
 			color: #E91E63;
 			font-weight: bold;
 		}
@@ -2517,3 +2529,34 @@ input, select, textarea {
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
+
+
+		
+		@keyframes rotateGradient {
+			0%, 100% {
+				background-size: 0% 200%;
+			}
+			50% {
+				background-size: 200% 0%;
+			}
+		}
+		
+		.profile-border {
+			display: inline-block;
+			border-radius: 100%;
+			padding: 5px; /* Adjust the size of the border here */
+			background: radial-gradient(circle, #18BEE9, #C96FE1, #F45161);
+			background-size: 300% 300%;
+			animation: rotateGradient 3s linear infinite;
+			margin-bottom: -5px; /* Adjust this to control the space between the image and the border */
+			transform: translateX(90px) translateY(-10px);
+		}
+		
+		.profile-border img {
+			display: block;
+			width: 250px; /* Largeur de la photo */
+			height: 250px; /* Hauteur de la photo */
+			object-fit: cover;
+
+		}
+		
