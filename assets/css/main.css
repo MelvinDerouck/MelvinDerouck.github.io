@@ -2002,16 +2002,16 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #fff;
+			background-color: transparent;
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
+			background-color: transparent;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
+			background-color: transparent;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
@@ -2408,7 +2408,7 @@ input, select, textarea {
 				}
 
 					#nav a:hover {
-						background-color: transparent;
+						background-color: #fff;
 					}
 
 		/* Articles */
@@ -2460,11 +2460,11 @@ input, select, textarea {
 			justify-content: center;
 			align-items: center;
 			padding: 20px;
-			background-color: #ffffff;
+			background-color: transparent;
 	}
 
 		.info-card {
-			background: #fafafa;
+			background: #fff;
 			border: 2px solid #ddd;
 			border-radius: 15px;
 			box-shadow: 0 2px 4px rgba(0,0,0,0.05);
@@ -2479,6 +2479,7 @@ input, select, textarea {
 			height: 120px;
 			transform: translateY(10px);
 			transition: transform 0.3s ease;
+			z-index: 1;
 	}
 
 		.info-card .info-content h3 {
@@ -2558,5 +2559,20 @@ input, select, textarea {
 			height: 250px; /* Hauteur de la photo */
 			object-fit: cover;
 
+		}
+
+		@media screen and (max-width: 768px) {
+			#defaultCanvas0 {
+				height: 200px; /* Hauteur plus petite pour les écrans plus petits */
+			}
+		}
+		
+		#defaultCanvas1 { /* ID généré automatiquement par p5.js pour le canvas */
+			width: 100vw;
+			height: 400vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1; /* Place le canvas en arrière-plan */
 		}
 		

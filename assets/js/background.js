@@ -9,18 +9,22 @@ var ca;
 
 
 function setup() {
-  frameRate(20);
+  frameRate(60); // FPS
   ca = createCanvas(windowWidth, windowHeight);
   ca.position(0, 0);
   mouse = createVector(mouseX, mouseY);
-  for (let i = 0; i < 250; i++) {
+  for (let i = 0; i < 75; i++) { // Nb particules à l'écran
     particles.push(new particle());
   }
 
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight); 
+}
+
 function draw() {
-  background(0);
+  clear();
   mousepos()
   for (let i = 0; i < particles.length; i++) {
     particles[i].move();
