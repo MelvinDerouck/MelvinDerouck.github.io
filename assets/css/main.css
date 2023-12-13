@@ -2531,7 +2531,7 @@ input, select, textarea {
 			-webkit-text-fill-color: transparent;
 		}
 
-
+		/* Radiant border PP */
 		
 		@keyframes rotateGradient {
 			0%, 100% {
@@ -2561,6 +2561,8 @@ input, select, textarea {
 
 		}
 
+		/* Particles bg*/
+
 		@media screen and (max-width: 768px) {
 			#defaultCanvas0 {
 				height: 200px; /* Hauteur plus petite pour les écrans plus petits */
@@ -2576,3 +2578,10 @@ input, select, textarea {
 			z-index: -1; /* Place le canvas en arrière-plan */
 		}
 		
+
+        /* Géomap */
+
+        #map {
+            height: 400px;  /* La hauteur de la carte */
+            width: 100%;    /* La largeur de la carte */
+        }
