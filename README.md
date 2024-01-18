@@ -2,10 +2,10 @@
 
 This is my website. 
 
-I started from an HTML5 UP template to get most of the html code quickly. <\br>
-Animations are in Javascript. I was inspired by the design of some existing websites.<\br>
-The particles background come from : www.github.com<\br>
-I modified the script to have the look I wanted<\br>
+I started from an HTML5 UP template to get most of the html code quickly. </br>
+Animations are in Javascript. I was inspired by the design of some existing websites.</br>
+The particles background come from : www.github.com</br>
+I modified the script to have the look I wanted</br>
 
 On this website, you will discover :
 
