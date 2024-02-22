@@ -353,6 +353,7 @@ input, select, textarea {
 
 		.row > .col-4 {
 			width: 33.33333%;
+			
 		}
 
 		.row > .off-4 {
@@ -2586,3 +2587,12 @@ input, select, textarea {
             height: 400px;  /* La hauteur de la carte */
             width: 100%;    /* La largeur de la carte */
         }
+
+
+
+		.uniform-image {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		  }
+		  
