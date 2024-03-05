@@ -1,5 +1,7 @@
 # Melvin_Derouck.io
 
+![image](https://github.com/MelvinDerouck/MelvinDerouck.github.io/blob/main/images/homepage.png)
+
 This is my website 😊
 
 I started from an HTML5 UP template to get most of the html code quickly. </br>
