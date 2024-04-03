@@ -2502,7 +2502,17 @@ input, select, textarea {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-		  }
+		}
+		
+		.timeline {
+			display: flex;
+			flex-direction: column; /* Disposer les événements verticalement */
+			align-items: center; /* Centrer les événements horizontalement */
+		}
+		
+		.event {
+			margin-bottom: 20px; /* Espacement entre les événements */
+		}
 
 		
 		/* Small logo */
