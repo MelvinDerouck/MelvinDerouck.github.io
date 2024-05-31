@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap" class="wtd-font">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded" class="wtd-font">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   </head>
@@ -87,33 +88,33 @@
       </div>
        
       <!-- Timeline -->
-       
+      
       <div class="row hide-if-small-screen centered-content" style="padding-top: 5%">
-        <div class="col-lg-12 col-md-8 col-sm-8 text-center d-none d-sm-block">
-          <svg width="980" height="138">
-            <line x1="0" y1="50" x2="1000" y2="50" style="stroke:#757478; stroke-width:1.5"></line>
-            <circle cx="220" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
-            <text text-anchor="middle" x="220" y="80" fill="black">2018</text>
-            <text font-size="13" text-anchor="middle" x="100" y="30" fill="black">Process Technician</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="100" y="80" fill="#808080">STMicroelectronics</text>
-            <image href="https://images.ctfassets.net/jfh6bmmmap0r/2EDlnBYHtgwK4prPJ0m149/c60d6468427de57da97c8de06e68d4ec/st-logo_2.png" x="60" y="90" height="60px" width="65px" />
-            <circle cx="480" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
-            <text text-anchor="middle" x="480" y="80" fill="black">2019</text>
-            <text font-size="13" text-anchor="middle" x="350" y="30" fill="black">Quality Technician</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="80" fill="#808080">Becton Dickinson</text>
-            <image href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Becton_Dickinson_logo.svg/2560px-Becton_Dickinson_logo.svg.png" x="300" y="90" height="60px" width="90px" />
-            <circle cx="730" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
-            <text text-anchor="middle" x="730" y="80" fill="black">2023</text>
-            <text font-size="13" text-anchor="middle" x="605" y="30" fill="black">Process Technician</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="605" y="80" fill="#808080">Lynred</text>
-            <image href="https://upload.wikimedia.org/wikipedia/fr/d/d7/LYNRED_LOGO_RED.jpg" x="555" y="95" height="50px" width="100px" />
-            <text font-size="13" text-anchor="middle" x="860" y="30" fill="black">Data Analyst</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="860" y="80" fill="#808080">Vinci Facilities</text>
-            <image href="https://getlogo.net/wp-content/uploads/2020/07/vinci-facilities-logo-vector.png" x="815" y="90" height="60px" width="110px" />
-          </svg>
-        </div>
+          <div class="col-lg-12 col-md-8 col-sm-8 text-center d-none d-sm-block">
+              <svg width="980" height="138">
+                  <line x1="0" y1="50" x2="1000" y2="50" style="stroke:#757478; stroke-width:1.5"></line>
+                  <circle cx="220" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
+                  <text text-anchor="middle" x="220" y="80" fill="black">2018</text>
+                  <text font-size="13" text-anchor="middle" x="100" y="30" fill="black">Process Technician</text>
+                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="100" y="80" fill="#808080">STMicroelectronics</text>
+                  <image href="https://images.ctfassets.net/jfh6bmmmap0r/2EDlnBYHtgwK4prPJ0m149/c60d6468427de57da97c8de06e68d4ec/st-logo_2.png" x="60" y="90" height="60px" width="65px" />
+                  <circle cx="480" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
+                  <text text-anchor="middle" x="480" y="80" fill="black">2019</text>
+                  <text font-size="13" text-anchor="middle" x="350" y="30" fill="black">Quality Technician</text>
+                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="80" fill="#808080">Becton Dickinson</text>
+                  <image href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Becton_Dickinson_logo.svg/2560px-Becton_Dickinson_logo.svg.png" x="300" y="90" height="60px" width="90px" />
+                  <circle cx="730" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#8e8d91"></circle>
+                  <text text-anchor="middle" x="730" y="80" fill="black">2023</text>
+                  <text font-size="13" text-anchor="middle" x="605" y="30" fill="black">Process Technician</text>
+                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="605" y="80" fill="#808080">Lynred</text>
+                  <image href="https://upload.wikimedia.org/wikipedia/fr/d/d7/LYNRED_LOGO_RED.jpg" x="555" y="95" height="50px" width="100px" />
+                  <text font-size="13" text-anchor="middle" x="860" y="30" fill="black">Data Analyst</text>
+                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="860" y="80" fill="#808080">Vinci Facilities</text>
+                  <image href="https://getlogo.net/wp-content/uploads/2020/07/vinci-facilities-logo-vector.png" x="815" y="90" height="60px" width="110px" />
+              </svg>
+          </div>
       </div>
-    </article>
+
      
     <!-- Skills -->
      
