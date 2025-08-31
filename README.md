@@ -2,17 +2,14 @@
 
 [![Bannièrevidéo](accueil.mp4)]
 
-This is my website 😊
-
-I started from an HTML5 UP template to get most of the html code quickly. </br>
-Animations are in Javascript. I was inspired by the design of some existing websites.</br>
+This is my website !
 
 On this website, you will discover :
 
 - who I am
 - what I have to offer
 - my experiences
-- my skills (soft/hard)
+- my soft & hard skills 
 - a glimpse of data projects I've been working on
 - a contact form, with my contact details
 
