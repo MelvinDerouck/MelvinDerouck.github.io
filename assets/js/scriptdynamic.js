@@ -1,5 +1,5 @@
 // Initialisation des mots
-var words = ["a Data Analyst", "skilled in Python & SQL", "a data enthusiast", "ready to help you !"];
+var words = ["an Analytics Engineer", "skilled in Python & SQL", "a data enthusiast", "ready to help you !"];
 var i = 0;
 var typingSpeed = 70; // Vitesse de frappe
 var deletingSpeed = typingSpeed / 3; // Vitesse d'effacement, 3 fois plus rapide
